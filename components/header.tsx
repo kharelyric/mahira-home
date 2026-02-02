@@ -52,10 +52,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex items-center gap-2">
           {isDark ? (
             <Image
-              src="/mahira_logo_light.ico"
+              src="/mahira_light_logo.ico"
               alt="Mahira Holdings"
               width={40}
               height={40}
@@ -63,13 +63,14 @@ export function Header() {
             />
           ) : (
             <Image
-              src="/mahira_logo_dark.jpeg"
+              src="/mahira_logo_light.ico"
               alt="Mahira Holdings"
-              width={120}
+              width={40}
               height={40}
               className="object-contain"
             />
           )}
+          <p className="text-sm text-muted-foreground">Mahira Holdings</p>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
