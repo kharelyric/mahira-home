@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Separator } from "@/components/ui/separator"
-import { Linkedin, Mail } from "lucide-react"
+import { Linkedin } from "lucide-react"
 
 const team = [
   {
@@ -10,6 +10,7 @@ const team = [
     role: "Strategy and Finance",
     image: "/shirsh_linkedin.jpeg",
     description: "Ex-Bernstein professional. Deep expertise in business fundamentals, finance and healthcare-sector.",
+    linkedin: "https://www.linkedin.com/in/sawarnashirsh/",
   },
   {
     name: "Nishkarsh Bansal",
@@ -17,13 +18,15 @@ const team = [
     role: "Operations",
     image: "/bansal_linkedin.jpeg",
     description: "Operator from Minimalist Founder's Office. Experience in building processes and scaling consumer businesses.",
+    linkedin: "https://www.linkedin.com/in/nishkarsh-bansal-82b9641bb/",
   },
   {
     name: "Lyric Khare",
     initials: "L",
     role: "Tech and Ops",
     image: "/lyric_linkedin.jpeg",
-    description: "Tech specialist. Experience in Palantir-style enterprise tech and applied AI.",
+    description: "Tech specialist. Experience in Palantir-style enterprise tech and business transformation using AI.",
+    linkedin: "https://www.linkedin.com/in/lyric-khare/",
   },
   {
     name: "Chirag S",
@@ -31,6 +34,7 @@ const team = [
     role: "Strategy and Sales",
     image: "/chirag_linkedin.jpeg",
     description: "Ex-Bain & Company. Trained in structured problem-solving, strategic planning, and operational improvement.",
+    linkedin: "https://www.linkedin.com/in/foundachirag/",
   },
 ]
 
@@ -65,18 +69,13 @@ export function Team() {
                   </p>
                   <div className="mt-4 flex items-center gap-3">
                     <a
-                      href="#"
+                      href={member.linkedin}
                       className="text-muted-foreground transition-colors hover:text-foreground"
                       aria-label={`${member.name} LinkedIn`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Linkedin className="h-4 w-4" />
-                    </a>
-                    <a
-                      href="#"
-                      className="text-muted-foreground transition-colors hover:text-foreground"
-                      aria-label={`Email ${member.name}`}
-                    >
-                      <Mail className="h-4 w-4" />
                     </a>
                   </div>
                 </div>
