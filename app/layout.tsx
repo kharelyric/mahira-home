@@ -2,6 +2,7 @@ import React from "react"
 import type { Metadata } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { ThemeProvider } from "@/components/theme-provider"
 import './globals.css'
 
 const _inter = Inter({ subsets: ["latin"] });
@@ -9,7 +10,7 @@ const _playfair = Playfair_Display({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Mahira Holdings',
-  description: 'Mahira Holdings is a holding company formed to acquire, operate, and scale high-quality Indian SMEs through direct ownership and hands-on execution.',
+  description: 'Mahira Holdings is an Owner-Operator platform formed to acquire, operate, and scale high-quality cash generating Indian SMEs through direct ownership and hands-on execution.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -36,10 +37,17 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`font-sans antialiased`}>
-        {children}
-        <Analytics />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   )

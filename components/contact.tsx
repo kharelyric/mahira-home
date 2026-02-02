@@ -24,9 +24,7 @@ export function Contact() {
             <ExternalLink className="h-4 w-4" />
           </a>
         </Button>
-        <p className="mt-4 text-sm text-muted-foreground">
-          Opens Google Form in a new tab
-        </p>
+
       </div>
     </section>
   )

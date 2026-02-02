@@ -5,32 +5,32 @@ import { Linkedin, Mail } from "lucide-react"
 
 const team = [
   {
-    name: "Shirsh",
+    name: "Shirsh Sawarna",
     initials: "S",
-    role: "Finance Lead",
+    role: "Strategy and Finance",
     image: "/shirsh_linkedin.jpeg",
-    description: "Ex-Bernstein professional. Deep expertise in business fundamentals, cash-flow analysis, and healthcare.",
+    description: "Ex-Bernstein professional. Deep expertise in business fundamentals, finance and healthcare-sector.",
   },
   {
-    name: "Chirag",
-    initials: "C",
-    role: "Strategy Lead",
-    image: "/chirag_linkedin.jpeg",
-    description: "Ex-Bain & Company. Trained in structured problem-solving, strategic planning, and operational improvement.",
-  },
-  {
-    name: "Bansal",
+    name: "Nishkarsh Bansal",
     initials: "B",
-    role: "Operations Lead",
+    role: "Operations",
     image: "/bansal_linkedin.jpeg",
     description: "Operator from Minimalist Founder's Office. Experience in building processes and scaling consumer businesses.",
   },
   {
-    name: "Lyric",
+    name: "Lyric Khare",
     initials: "L",
-    role: "Technology Lead",
+    role: "Tech and Ops",
     image: "/lyric_linkedin.jpeg",
     description: "Tech specialist. Experience in Palantir-style enterprise tech and applied AI.",
+  },
+  {
+    name: "Chirag S",
+    initials: "C",
+    role: "Strategy and Sales",
+    image: "/chirag_linkedin.jpeg",
+    description: "Ex-Bain & Company. Trained in structured problem-solving, strategic planning, and operational improvement.",
   },
 ]
 

@@ -15,12 +15,12 @@ const philosophyItems = [
   {
     value: "operational",
     title: "Operational Involvement",
-    content: "We don't sit on the sidelines. Our team works directly with management on strategic initiatives, operational improvements, and day-to-day problem-solving. We believe value is created through execution, not just capital allocation.",
+    content: "We don't sit on the sidelines. We work directly on strategic initiatives, operational improvements, and day-to-day problem-solving. We believe value is created through execution, not just capital allocation.",
   },
   {
     value: "financial",
     title: "Disciplined Financial Management",
-    content: "We focus on businesses with strong unit economics, sustainable cash flows, and clear paths to profitability. Financial discipline is not just a screening criterion—it's an operating principle we bring to every company.",
+    content: "We focus on businesses with strong unit economics and sustainable cash flows. Financial discipline is not just a screening criterion, it's an operating principle we bring to every company.",
   },
   {
     value: "systems",

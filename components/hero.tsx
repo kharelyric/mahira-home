@@ -8,7 +8,7 @@ export function Hero() {
           Ownership over advisory. Execution over abstraction.
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl text-pretty">
-          Mahira Holdings is a holding company formed to acquire, operate, and scale high-quality Indian SMEs through direct ownership and hands-on execution.
+          Mahira Holdings is an Owner-Operator platform formed to acquire, operate, and scale high-quality cash generating Indian SMEs through direct ownership and hands-on execution.
         </p>
         <div className="mt-10">
           <Button variant="outline" size="lg" asChild>
